@@ -75,7 +75,7 @@ const JimmyAI = () => {
             {/* Header */}
             <div className="p-6 bg-slate-950 text-white flex items-center justify-between">
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-orange-600 flex items-center justify-center shadow-lg">
+                <div className="w-12 h-12 rounded-full bg-brand flex items-center justify-center shadow-lg">
                   <Bot className="w-6 h-6" />
                 </div>
                 <div>
@@ -108,7 +108,7 @@ const JimmyAI = () => {
                 >
                   <div className={`max-w-[80%] p-4 rounded-3xl text-sm leading-relaxed ${
                     msg.role === 'user' 
-                    ? 'bg-orange-600 text-white rounded-tr-none shadow-lg' 
+                    ? 'bg-brand text-white rounded-tr-none shadow-lg' 
                     : 'bg-white text-slate-700 rounded-tl-none border border-slate-100 shadow-sm'
                   }`}>
                     {msg.text}
@@ -118,7 +118,7 @@ const JimmyAI = () => {
               {isLoading && (
                 <div className="flex justify-start">
                   <div className="bg-white p-4 rounded-3xl rounded-tl-none border border-slate-100 shadow-sm">
-                    <Loader2 className="w-5 h-5 animate-spin text-orange-600" />
+                    <Loader2 className="w-5 h-5 animate-spin text-brand" />
                   </div>
                 </div>
               )}
@@ -133,12 +133,12 @@ const JimmyAI = () => {
                   onChange={(e) => setInput(e.target.value)}
                   onKeyPress={(e) => e.key === 'Enter' && handleSend()}
                   placeholder="ถาม Jimmy ได้เลย..."
-                  className="w-full pl-6 pr-14 py-4 bg-slate-50 border-none rounded-2xl text-sm focus:ring-2 focus:ring-orange-600/20 transition-all"
+                  className="w-full pl-6 pr-14 py-4 bg-slate-50 border-none rounded-2xl text-sm focus:ring-2 focus:ring-brand/20 transition-all"
                 />
                 <button 
                   onClick={handleSend}
                   disabled={isLoading}
-                  className="absolute right-2 top-1/2 -translate-y-1/2 p-2 bg-orange-600 text-white rounded-xl hover:scale-105 active:scale-95 transition-all disabled:opacity-50"
+                  className="absolute right-2 top-1/2 -translate-y-1/2 p-2 bg-brand text-white rounded-xl hover:scale-105 active:scale-95 transition-all disabled:opacity-50"
                 >
                   <Send className="w-4 h-4" />
                 </button>
@@ -156,7 +156,7 @@ const JimmyAI = () => {
         whileHover={{ scale: 1.1, rotate: 5 }}
         whileTap={{ scale: 0.9 }}
         onClick={() => setIsOpen(!isOpen)}
-        className="w-20 h-20 bg-orange-600 text-white rounded-full shadow-[0_20px_60px_rgba(249,115,22,0.4)] flex items-center justify-center relative group"
+        className="w-20 h-20 bg-brand text-white rounded-full shadow-[0_20px_60px_rgba(90,90,64,0.4)] flex items-center justify-center relative group"
       >
         <div className="absolute inset-0 bg-white rounded-full scale-0 group-hover:scale-100 opacity-0 group-hover:opacity-10 transition-all duration-500" />
         {isOpen ? <X className="w-8 h-8" /> : <Bot className="w-8 h-8" />}

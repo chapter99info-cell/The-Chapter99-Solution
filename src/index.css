@@ -4,6 +4,9 @@
 @theme {
   --font-sans: "Anuphan", "IBM Plex Sans Thai", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Anuphan", sans-serif;
+  --color-brand: #6b8a25;
+  --color-brand-light: #8ca641;
+  --color-brand-dark: #4d631b;
 }
 
 @layer base {

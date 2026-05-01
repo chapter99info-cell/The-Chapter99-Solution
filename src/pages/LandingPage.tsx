@@ -98,12 +98,12 @@ const LandingPage = () => {
   };
 
   return (
-    <div className="font-sans text-slate-900 bg-white selection:bg-orange-500 selection:text-white overflow-x-hidden">
+    <div className="font-sans text-slate-900 bg-white selection:bg-brand selection:text-white overflow-x-hidden">
       {/* Custom Cursor Glow */}
       <motion.div 
         animate={{ x: mousePos.x - 150, y: mousePos.y - 150 }}
         transition={{ type: 'spring', damping: 30, stiffness: 200, mass: 0.5 }}
-        className="fixed top-0 left-0 w-[300px] h-[300px] bg-orange-600/10 blur-[100px] rounded-full pointer-events-none z-[9999] hidden lg:block"
+        className="fixed top-0 left-0 w-[300px] h-[300px] bg-brand/10 blur-[100px] rounded-full pointer-events-none z-[9999] hidden lg:block"
       />
 
       {/* --- HERO SECTION --- */}
@@ -136,7 +136,7 @@ const LandingPage = () => {
               opacity: [0.1, 0.2, 0.1],
             }}
             transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-            className="absolute top-[-10%] left-[-10%] w-[60%] h-[60%] bg-orange-600/10 blur-[150px] rounded-full" 
+            className="absolute top-[-10%] left-[-10%] w-[60%] h-[60%] bg-brand/10 blur-[150px] rounded-full" 
           />
         </div>
 
@@ -157,14 +157,14 @@ const LandingPage = () => {
 
             <motion.h1 variants={itemVariants} className="mb-10 text-7xl font-black leading-[0.85] text-white md:text-[10rem] lg:text-[13rem] tracking-tighter">
               <span className="block mb-4">REDEFINE</span>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 via-orange-500 to-orange-400 italic pr-4">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand via-brand-light to-brand-light italic pr-4">
                 REALITY
               </span>
             </motion.h1>
 
             <motion.p variants={itemVariants} className="mb-16 text-xl leading-relaxed text-slate-400 md:text-4xl font-light max-w-4xl mx-auto">
               <StaggeredText text="เปลี่ยนร้านนวดและร้านอาหารไทยของคุณให้เป็น" /> <br className="hidden md:block"/>
-              <span className="text-white font-medium underline decoration-orange-600 decoration-4 underline-offset-8">
+              <span className="text-white font-medium underline decoration-brand decoration-4 underline-offset-8">
                 <StaggeredText text='"แบรนด์ระดับโลก"' />
               </span> <StaggeredText text="ด้วยพลัง AI" />
             </motion.p>
@@ -174,11 +174,11 @@ const LandingPage = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 href="#pricing" 
-                className="group relative px-14 py-7 text-2xl font-black text-white transition-all duration-500 bg-orange-600 rounded-full shadow-[0_20px_60px_rgba(249,115,22,0.3)] overflow-hidden"
+                className="group relative px-14 py-7 text-2xl font-black text-white transition-all duration-500 bg-brand rounded-full shadow-[0_20px_60px_rgba(90,90,64,0.3)] overflow-hidden"
               >
                 <span className="relative z-10">จองสิทธิ์ลด 50%</span>
                 <div className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
-                <span className="absolute inset-0 flex items-center justify-center text-orange-600 font-black translate-y-full group-hover:translate-y-0 transition-transform duration-500">CLICK NOW</span>
+                <span className="absolute inset-0 flex items-center justify-center text-brand font-black translate-y-full group-hover:translate-y-0 transition-transform duration-500">CLICK NOW</span>
               </motion.a>
               <Link 
                 to="/portfolio" 
@@ -193,7 +193,7 @@ const LandingPage = () => {
       </header>
 
       {/* --- MARQUEE SECTION --- */}
-      <div className="py-12 bg-orange-600 overflow-hidden whitespace-nowrap border-y border-orange-700 relative z-20">
+      <div className="py-12 bg-brand overflow-hidden whitespace-nowrap border-y border-brand-dark relative z-20">
         <motion.div 
           variants={marqueeVariants}
           animate="animate"
@@ -223,7 +223,7 @@ const LandingPage = () => {
               <div className="text-[12rem] font-black text-slate-50 leading-none mb-4">01</div>
               <h2 className="text-6xl md:text-8xl font-black leading-[0.9] mb-10 tracking-tighter">
                 <StaggeredText text="ทำไมต้อง" /> <br/>
-                <span className="text-orange-600">Chapter99?</span>
+                <span className="text-brand">Chapter99?</span>
               </h2>
               <p className="text-2xl text-slate-400 leading-relaxed max-w-lg font-light mb-6">
                 เราคือ <span className="text-slate-900 font-bold italic">Digital Architect</span> ที่พร้อมจะเปลี่ยนโฉมธุรกิจของคุณด้วยนวัตกรรมที่ซิดนีย์ไม่เคยเห็น
@@ -232,7 +232,7 @@ const LandingPage = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: 0.5 }}
-                className="text-xl text-orange-600/80 font-medium italic mb-12"
+                className="text-xl text-brand-dark font-medium italic mb-12"
               >
                 "Chapter99 ไม่ใช่แค่สตูดิโอถ่ายภาพทั่วไป"
               </motion.p>
@@ -242,7 +242,7 @@ const LandingPage = () => {
                   <span className="relative">
                     Learn our process
                     <motion.span 
-                      className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-600 group-hover:w-full transition-all duration-500"
+                      className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand group-hover:w-full transition-all duration-500"
                     />
                   </span>
                   <div className="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center group-hover:bg-slate-950 group-hover:text-white transition-all duration-500">
@@ -256,9 +256,9 @@ const LandingPage = () => {
                 >
                   <div className="space-y-8">
                     <div className="flex items-center gap-4">
-                      <div className="w-3 h-3 rounded-full bg-orange-600 animate-ping absolute opacity-20" />
-                      <div className="w-3 h-3 rounded-full bg-orange-600 relative" />
-                      <p className="text-[10px] font-black text-orange-600 uppercase tracking-[0.4em]">The Digital Architect</p>
+                      <div className="w-3 h-3 rounded-full bg-brand animate-ping absolute opacity-20" />
+                      <div className="w-3 h-3 rounded-full bg-brand relative" />
+                      <p className="text-[10px] font-black text-brand uppercase tracking-[0.4em]">The Digital Architect</p>
                     </div>
                     
                     <div className="space-y-6">
@@ -266,7 +266,7 @@ const LandingPage = () => {
                         "Chapter99 ไม่ใช่แค่ช่างภาพรับจ้างทั่วไป"
                       </h4>
                       <p className="text-xl text-slate-600 leading-relaxed font-light">
-                        แต่ผมคือ <span className="text-slate-950 font-bold italic underline decoration-orange-600/30 decoration-4 underline-offset-4">Digital Architect</span> ที่จะเข้ามาวางโครงสร้างภาพลักษณ์ใหม่ให้ธุรกิจของคุณ ผมเชื่อว่าธุรกิจที่ดีต้องมีทั้ง <span className="text-orange-600 font-semibold">'ภาพที่สวยจับใจ'</span> และ <span className="text-orange-600 font-semibold">'ระบบที่ใช้งานง่าย'</span>
+                        แต่ผมคือ <span className="text-slate-950 font-bold italic underline decoration-brand/30 decoration-4 underline-offset-4">Digital Architect</span> ที่จะเข้ามาวางโครงสร้างภาพลักษณ์ใหม่ให้ธุรกิจของคุณ ผมเชื่อว่าธุรกิจที่ดีต้องมีทั้ง <span className="text-brand font-semibold">'ภาพที่สวยจับใจ'</span> และ <span className="text-brand font-semibold">'ระบบที่ใช้งานง่าย'</span>
                       </p>
                       
                       <div className="h-px bg-slate-100 w-1/4" />
@@ -282,7 +282,7 @@ const LandingPage = () => {
                           <motion.div 
                             animate={{ x: ["-100%", "100%"] }}
                             transition={{ duration: 2, repeat: Infinity, delay: i * 0.2 }}
-                            className="w-full h-full bg-orange-600/20"
+                            className="w-full h-full bg-brand/20"
                           />
                         </div>
                       ))}
@@ -312,13 +312,13 @@ const LandingPage = () => {
                   whileInView={{ x: 0, opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ delay: idx * 0.1 }}
-                  className="group p-8 bg-white rounded-2xl shadow-sm border-b-4 border-orange-500 hover:bg-orange-600 transition-all duration-500"
+                  className="group p-8 bg-white rounded-2xl shadow-sm border-b-4 border-brand-light hover:bg-brand transition-all duration-500"
                 >
                   <div className="mb-4 text-4xl group-hover:scale-110 transition-transform duration-500">
                     {feature.emoji}
                   </div>
                   <h3 className="mb-2 text-2xl font-bold text-gray-800 group-hover:text-white transition-colors">{feature.title}</h3>
-                  <div className="text-gray-600 leading-relaxed group-hover:text-orange-100 transition-colors text-lg">
+                  <div className="text-gray-600 leading-relaxed group-hover:text-brand-light/20 transition-colors text-lg">
                     {typeof feature.desc === 'string' ? feature.desc : feature.desc}
                   </div>
                 </motion.div>
@@ -338,7 +338,7 @@ const LandingPage = () => {
             }}
           />
         </div>
-        <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,rgba(249,115,22,0.1),transparent_70%)] z-1" />
+        <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,rgba(90,90,64,0.1),transparent_70%)] z-1" />
 
         <div className="container px-6 mx-auto relative z-10">
           <div className="max-w-5xl mx-auto mb-32 text-center">
@@ -347,7 +347,7 @@ const LandingPage = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               className="text-7xl md:text-[10rem] font-black mb-10 tracking-tighter leading-none"
             >
-              THE <span className="text-orange-600 italic">OFFER</span>
+              THE <span className="text-brand italic">OFFER</span>
             </motion.h2>
             <p className="text-2xl text-slate-500 font-light">สิทธิพิเศษสำหรับ 10 ร้านแรกที่ต้องการเป็นผู้นำตลาดอย่างแท้จริง</p>
           </div>
@@ -388,19 +388,19 @@ const LandingPage = () => {
                 transition={{ delay: idx * 0.1, duration: 0.8 }}
                 className={`relative p-14 rounded-[64px] border transition-all duration-700 ${
                   plan.recommended 
-                  ? 'bg-orange-600 border-orange-500 shadow-[0_40px_100px_rgba(249,115,22,0.3)] z-20 h-[110%]' 
-                  : 'bg-white/5 border-white/10 hover:border-white/30'
+                  ? 'bg-brand border-brand-light shadow-[0_40px_100px_rgba(90,90,64,0.3)] z-20 h-[110%] text-slate-950' 
+                  : 'bg-white/5 border-white/10 hover:border-white/30 text-white'
                 }`}
               >
-                <h3 className={`text-sm font-black uppercase tracking-[0.4em] mb-12 ${plan.recommended ? 'text-white' : 'text-slate-500'}`}>
+                <h3 className={`text-sm font-black uppercase tracking-[0.4em] mb-12 ${plan.recommended ? 'text-slate-900/60' : 'text-slate-500'}`}>
                   {plan.name}
                 </h3>
                 <div className="mb-14">
                   <div className="flex items-baseline gap-4">
                     <span className="text-8xl font-black tracking-tighter">${plan.price}</span>
-                    <span className={`text-2xl line-through ${plan.recommended ? 'text-orange-300' : 'text-slate-700'}`}>${plan.oldPrice}</span>
+                    <span className={`text-2xl line-through ${plan.recommended ? 'text-brand-dark' : 'text-slate-700'}`}>${plan.oldPrice}</span>
                   </div>
-                  <div className={`mt-4 font-bold ${plan.recommended ? 'text-orange-100' : 'text-slate-500'}`}>
+                  <div className={`mt-4 font-bold ${plan.recommended ? 'text-slate-900/80' : 'text-slate-500'}`}>
                     <TypewriterText text={`+$${plan.fee}/mo maintenance`} delay={0.5 + idx * 0.2} />
                     <span className="ml-2 opacity-60 font-light text-sm italic">
                       <TypewriterText text={`ปกติ $${plan.oldFee}/ mo`} delay={1.5 + idx * 0.2} />
@@ -410,14 +410,14 @@ const LandingPage = () => {
                 <ul className="mb-16 space-y-8">
                   {plan.features.map((f, i) => (
                     <li key={i} className="flex items-start gap-5 text-xl">
-                      <CheckCircle2 className={`w-7 h-7 flex-shrink-0 ${plan.recommended ? 'text-white' : 'text-orange-600'}`} />
-                      <span className={i === 1 && plan.recommended ? 'font-black text-white underline' : 'opacity-80'}>{f}</span>
+                      <CheckCircle2 className={`w-7 h-7 flex-shrink-0 ${plan.recommended ? 'text-slate-900' : 'text-brand'}`} />
+                      <span className={i === 1 && plan.recommended ? 'font-black text-slate-900 underline' : 'opacity-80'}>{f}</span>
                     </li>
                   ))}
                 </ul>
                 <button className={`w-full py-8 text-2xl font-black rounded-[32px] transition-all duration-500 ${
                   plan.recommended 
-                  ? 'bg-white text-orange-600 hover:scale-105 shadow-2xl' 
+                  ? 'bg-white text-brand hover:scale-105 shadow-2xl' 
                   : 'bg-white/10 text-white hover:bg-white hover:text-black'
                 }`}>
                   Select Plan
@@ -434,37 +434,47 @@ const LandingPage = () => {
           <motion.div 
             initial={{ scale: 0.9, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
-            className="bg-slate-950 rounded-[80px] p-20 md:p-40 text-center text-white relative overflow-hidden border border-white/5"
+            className="bg-brand rounded-[80px] p-20 md:p-40 text-center relative overflow-hidden border border-brand-light/20"
           >
-            <div className="absolute inset-0 z-0 opacity-40">
+            <div className="absolute inset-0 z-0 opacity-10">
               <div 
-                className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                className="absolute inset-0 bg-cover bg-center bg-no-repeat grayscale"
                 style={{ 
                   backgroundImage: `url('https://firebasestorage.googleapis.com/v0/b/studio-6368441530-fca54.firebasestorage.app/o/Chapter99%20Solutions%2FPhotos%2F2b00bbd9-b774-4205-a3d8-8f8631e65d99.jpg?alt=media&token=ce10dde4-5e39-4726-8044-c88cb725f31e')`,
                 }}
               />
             </div>
-            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-slate-950 via-transparent to-slate-950 z-1" />
-            <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20 z-2" />
-            <motion.h2 
-              animate={{ opacity: [0.5, 1, 0.5] }}
-              transition={{ duration: 3, repeat: Infinity }}
-              className="relative text-6xl md:text-[12rem] font-black mb-12 leading-none tracking-tighter"
-            >
-              READY?
-            </motion.h2>
-            <p className="relative text-2xl md:text-5xl mb-20 opacity-60 font-light max-w-4xl mx-auto leading-tight">
-              อย่าปล่อยให้ร้านของคุณดู "เก่า" ในสายตาลูกค้า <br/>
-              เริ่มสร้างความแตกต่างตั้งแต่วันนี้
-            </p>
-            <motion.button 
-              whileHover={{ scale: 1.1, rotate: -2 }}
-              whileTap={{ scale: 0.9 }}
-              className="relative px-20 py-10 bg-orange-600 text-white text-3xl font-black rounded-full shadow-[0_30px_80px_rgba(249,115,22,0.4)] flex items-center gap-6 mx-auto group"
-            >
-              <MessageCircle className="w-10 h-10 group-hover:rotate-12 transition-transform" />
-              คุยกับเราตอนนี้
-            </motion.button>
+            <div className="relative z-10 space-y-8">
+              <motion.h2 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                className="text-5xl md:text-8xl font-black text-slate-900 tracking-tight"
+              >
+                Ready for your transformation?
+              </motion.h2>
+              <p className="text-xl md:text-3xl text-white font-medium max-w-2xl mx-auto opacity-90">
+                Join the top-performing Thai businesses in Sydney.
+              </p>
+              
+              <div className="pt-8">
+                <motion.button 
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="px-12 py-6 bg-white text-slate-900 text-xl font-bold rounded-2xl shadow-xl flex items-center gap-4 mx-auto group"
+                >
+                  Get Your 50% Discount Now
+                  <ChevronRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
+                </motion.button>
+              </div>
+
+              <motion.p 
+                animate={{ opacity: [0.6, 1, 0.6] }}
+                transition={{ duration: 2, repeat: Infinity }}
+                className="text-sm font-black uppercase tracking-[0.3em] text-[#A3E635]"
+              >
+                Limited to 10 Clients Only
+              </motion.p>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -483,9 +493,9 @@ const LandingPage = () => {
               <div className="space-y-6">
                 <p className="text-xs font-black uppercase tracking-[0.4em] text-white/60">Navigation</p>
                 <ul className="space-y-4 text-xl font-bold text-white">
-                  <li><a href="#" className="hover:text-orange-600 transition-colors">Services</a></li>
-                  <li><a href="#" className="hover:text-orange-600 transition-colors">Portfolio</a></li>
-                  <li><a href="#" className="hover:text-orange-600 transition-colors">Pricing</a></li>
+                  <li><a href="#" className="hover:text-brand transition-colors">Services</a></li>
+                  <li><a href="#" className="hover:text-brand transition-colors">Portfolio</a></li>
+                  <li><a href="#" className="hover:text-brand transition-colors">Pricing</a></li>
                 </ul>
               </div>
               <div className="space-y-6">
