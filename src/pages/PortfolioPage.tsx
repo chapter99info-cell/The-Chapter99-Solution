@@ -83,21 +83,6 @@ export default function PortfolioPage() {
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-brand selection:text-white">
-      {/* --- FIXED HOME BUTTON --- */}
-      <div className="fixed top-8 left-8 z-[100]">
-        <Link to="/">
-          <motion.div 
-            whileHover={{ scale: 1.1, x: 5 }}
-            whileTap={{ scale: 0.9 }}
-            className="flex items-center gap-3 px-6 py-3 bg-white/90 backdrop-blur-md rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.1)] border border-slate-100 group"
-          >
-            <ArrowLeft className="w-4 h-4 text-slate-900 group-hover:-translate-x-1 transition-transform" />
-            <Home className="w-4 h-4 text-brand" />
-            <span className="text-xs font-black uppercase tracking-widest text-slate-900">Back to Home</span>
-          </motion.div>
-        </Link>
-      </div>
-
       {/* --- HERO --- */}
       <section className="relative pt-32 pb-20 px-6 bg-slate-950 text-white overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">

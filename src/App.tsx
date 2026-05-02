@@ -7,13 +7,15 @@ import ScrollToTop from './components/ScrollToTop';
 import ProtectedRoute from './components/ProtectedRoute';
 import AdminProtectedRoute from './components/AdminProtectedRoute';
 import AdminLayout from './components/AdminLayout';
-import JimmyAI from './components/JimmyAI';
+import OrangeBuddyAI from './components/JimmyAI';
 
 // --- Chapter99 Solutions Main Pages ---
 import LandingPage from './pages/LandingPage';
 import PortfolioPage from './pages/PortfolioPage';
 import PricingPage from './pages/PricingPage';
 import ContactPage from './pages/ContactPage';
+import VIPQualificationPage from './pages/VIPQualificationPage';
+import ServiceSummaryPage from './pages/solutions/ServiceSummaryPage';
 
 // --- Restaurant Solution Pages ---
 import RestaurantDemoPage from './pages/solutions/RestaurantDemoPage';
@@ -34,6 +36,7 @@ import AdminBookingsPage from './pages/admin/AdminBookingsPage';
 import AdminServicesPage from './pages/admin/AdminServicesPage';
 import AdminOrdersPage from './pages/admin/AdminOrdersPage';
 import AdminContentAIPage from './pages/admin/AdminContentAIPage';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
@@ -41,12 +44,15 @@ function App() {
       <AuthProvider>
         <Router>
           <ScrollToTop />
+          <Navbar />
           <Routes>
             {/* 🎯 MAIN SALES ROUTES */}
             <Route path="/" element={<LandingPage />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
             <Route path="/pricing" element={<PricingPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/vip-qualification" element={<VIPQualificationPage />} />
+            <Route path="/service-summary" element={<ServiceSummaryPage />} />
 
             {/* 🍜 THAI RESTAURANT SOLUTIONS */}
             <Route path="/solutions/restaurant" element={<RestaurantDemoPage />} />
@@ -77,7 +83,7 @@ function App() {
               </AdminProtectedRoute>
             } />
           </Routes>
-          <JimmyAI />
+          <OrangeBuddyAI />
           <Toaster />
         </Router>
       </AuthProvider>

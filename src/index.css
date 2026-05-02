@@ -7,6 +7,8 @@
   --color-brand: #6b8a25;
   --color-brand-light: #8ca641;
   --color-brand-dark: #4d631b;
+  --color-champagne: #E5C48B;
+  --color-soft-white: #F5F5F5;
 }
 
 @layer base {

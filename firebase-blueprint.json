@@ -1,0 +1,28 @@
+{
+  "entities": {
+    "Lead": {
+      "title": "Lead",
+      "description": "VIP Qualification Application from potential restaurant/massage clients",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "storeName": { "type": "string" },
+        "businessType": { "type": "string", "enum": ["restaurant", "massage"] },
+        "location": { "type": "string" },
+        "challenge": { "type": "string" },
+        "budget": { "type": "string" },
+        "selectedPlan": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "userEmail": { "type": "string" },
+        "userId": { "type": "string" }
+      },
+      "required": ["storeName", "businessType", "location", "challenge", "budget", "createdAt"]
+    }
+  },
+  "firestore": {
+    "leads/{leadId}": {
+      "schema": "Lead",
+      "description": "Collection of VIP qualification leads"
+    }
+  }
+}
