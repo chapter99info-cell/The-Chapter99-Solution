@@ -273,8 +273,15 @@ export default function PortfolioPage() {
       </section>
 
       {/* --- FOOTER (MINI) --- */}
-      <footer className="py-12 border-t border-slate-100 text-center text-slate-400 text-xs uppercase tracking-[0.2em] italic">
-        © 2026 CHAPTER99 SOLUTIONS • SYDNEY AUSTRALIA
+      <footer className="py-12 border-t border-slate-100 flex flex-col items-center gap-6 text-center text-slate-400 text-xs uppercase tracking-[0.2em] italic">
+        <div className="flex items-center gap-6 text-slate-400">
+          <a href="https://www.facebook.com/profile.php?id=61586534972406" target="_blank" rel="noreferrer" className="hover:text-brand transition-colors">Facebook</a>
+          <span>•</span>
+          <a href="#" className="hover:text-brand transition-colors">Instagram</a>
+        </div>
+        <div>
+          © 2026 CHAPTER99 SOLUTIONS • SYDNEY AUSTRALIA
+        </div>
       </footer>
     </div>
   );

@@ -261,7 +261,7 @@ const LandingPage = () => {
           <div className="grid md:grid-cols-4 gap-8">
             {[
               { num: "01", title: "คุยคอนเซปต์", desc: "คุยความต้องการ วางแผนแบรนด์ให้เปรี้ยวจี๊ด", icon: <MessageCircle className="w-10 h-10" /> },
-              { num: "02", title: "ออกแบบไอเดีย", desc: "ดีไซน์ Web/App และดีไซน์ที่ป้าๆ ชอบ", icon: <Sparkles className="w-10 h-10" /> },
+              { num: "02", title: "ออกแบบไอเดีย", desc: "ดีไซน์ Web/App ที่ทันสมัยและใช้งานง่าย", icon: <Sparkles className="w-10 h-10" /> },
               { num: "03", title: "ถ่ายภาพระดับมืออาชีพ", desc: "ภาพ Cinematic Food & Massage Photography", icon: <Camera className="w-10 h-10" /> },
               { num: "04", title: "สร้าง Web/App V4", desc: "ระบบจองและเมนูออนไลน์ที่ทันสมัยที่สุด", icon: <Smartphone className="w-10 h-10" /> },
             ].map((step, idx) => (
@@ -300,7 +300,7 @@ const LandingPage = () => {
                 รูปสวย <br /> <span className="text-brand text-5xl md:text-7xl">รวยคูณสอง!</span>
               </h2>
               <p className="text-2xl text-slate-400 font-bold mb-12 italic leading-relaxed">
-                "พี่เชื่อมือเถอะค่ะ! แค่เปลี่ยนมุมกล้องและจัดแสงแบบ Chapter99 ร้านป้าก็กลายเป็นร้านมิชลินได้ในพริบตา! ป้าๆ เห็นรูปสวยๆ แล้วจะรีบกดสั่งแพ็กเกจ Pro ทันทีเพราะอยากให้ร้านตัวเองดูหรูแบบนั้นบ้าง!" 🍊⚡️
+                "พี่เชื่อมือเถอะค่ะ! แค่เปลี่ยนมุมกล้องและจัดแสงแบบ Chapter99 ร้านพี่ก็กลายเป็นร้านมิชลินได้ในพริบตา! ใครๆ เห็นรูปสวยๆ ก็อยากจะเข้ามาสัมผัสบรรยากาศจริงและสั่งอาหารทันทีเลยค่ะ!" 🍊⚡️
               </p>
             </motion.div>
 
@@ -388,7 +388,7 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* --- 4 STEPS MASTERY --- */}
+      {/* --- 4 STEPS MASTERY (SYDNEY EDITION) --- */}
       <section className="py-24 bg-white border-b border-slate-100">
         <div className="container px-6 mx-auto">
           <div className="max-w-6xl mx-auto">
@@ -398,16 +398,28 @@ const LandingPage = () => {
               viewport={{ once: true }}
               className="text-center mb-20"
             >
-              <h2 className="text-4xl md:text-6xl font-black italic tracking-tighter mb-6">สัมผัสประสบการณ์การทำระบบที่เหนือกว่า</h2>
-              <p className="text-xl text-slate-500 font-bold italic">ด้วย 4 ขั้นตอนการทำงานระดับมืออาชีพโดยพี่แสน 🍊⚡️</p>
+              <motion.div 
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                className="inline-block px-6 py-2 bg-slate-900 text-white rounded-full text-[10px] font-black tracking-[0.4em] mb-6 uppercase"
+              >
+                The Sydney Sales Engine 🇦🇺
+              </motion.div>
+              <h2 className="text-4xl md:text-7xl font-black italic tracking-tighter mb-6 leading-[0.9]">
+                "Westerners <span className="text-brand">Buy With Their Eyes</span>"
+              </h2>
+              <p className="text-xl md:text-2xl text-slate-500 font-bold italic max-w-3xl mx-auto">
+                ดึงดูดลูกค้าฝรั่งด้วยภาพลักษณ์ระดับอินเตอร์ และการตลาดภาษาอังกฤษที่โดนใจ <br />
+                ดูแลโดยพี่แสน (Sydney Local Experience 29 Years) 🍊⚡️
+              </p>
             </motion.div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
-                { icon: "💡", title: "คุยคอนเซปต์", desc: "วางแผนแบรนด์ให้เปรี้ยวจี๊ด แตกต่างไม่ซ้ำใคร" },
-                { icon: "🎨", title: "ออกแบบไอเดีย", desc: "ดีไซน์ Web/App ระดับอินเตอร์ UX/UI ใช้ง่ายจนป้าๆ ก็กดได้" },
-                { icon: "📸", title: "ถ่ายภาพมืออาชีพ", desc: "บริการ Cinematic Food & Massage ดูแพงจนลูกค้าต้องทัก" },
-                { icon: "🚀", title: "สร้าง Web/App V4", desc: "ระบบจองคิวนวดและเมนูออนไลน์ที่ทันสมัยที่สุด" }
+                { icon: "💡", title: "คุยคอนเซปต์", desc: "วางแผนแบรนด์ให้เปรี้ยวจี๊ด แตกต่างเพื่อเข้าถึงตลาดซิดนีย์โดยเฉพาะ" },
+                { icon: "📸", title: "Cinematic Photo", desc: "ถ่ายภาพอาหาร/นวด สไตล์ Cinema ดูแพงจนฝรั่งต้องเหลียวมอง" },
+                { icon: "🎨", title: "AI Visual Content", desc: "ใช้ AI สร้าง Content สวยๆ อัปเดตโซเชียลให้ร้านดูเคลื่อนไหวตลอดเวลา" },
+                { icon: "🚀", title: "English PWA V4", desc: "ระบบสั่งงานภาษาอังกฤษที่ลื่นไหล ใช้ง่าย เหมือนแบรนด์ระดับสากล" }
               ].map((step, i) => (
                 <motion.div
                   key={i}
@@ -415,11 +427,12 @@ const LandingPage = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.1 }}
-                  className="p-8 bg-slate-50 rounded-[40px] border-2 border-transparent hover:border-brand/20 transition-all text-center group"
+                  className="p-10 bg-slate-50 rounded-[48px] border-2 border-transparent hover:border-brand/20 transition-all text-center group relative overflow-hidden"
                 >
-                  <div className="text-5xl mb-6 group-hover:scale-125 transition-transform">{step.icon}</div>
-                  <h4 className="text-2xl font-black mb-4 italic">{step.title}</h4>
-                  <p className="text-slate-600 font-bold leading-relaxed">{step.desc}</p>
+                  <div className="absolute top-4 right-6 text-brand/20 font-black text-6xl">0{i+1}</div>
+                  <div className="text-6xl mb-8 group-hover:scale-125 transition-transform relative z-10">{step.icon}</div>
+                  <h4 className="text-2xl font-black mb-4 italic relative z-10">{step.title}</h4>
+                  <p className="text-slate-600 font-bold leading-relaxed relative z-10">{step.desc}</p>
                 </motion.div>
               ))}
             </div>
@@ -427,29 +440,34 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* --- PRICING SECTION --- */}
+      {/* --- PRICING SECTION (SYDNEY EDITION) --- */}
       <section id="pricing" className="py-48 bg-slate-50 relative overflow-hidden">
         <div className="container px-6 mx-auto relative z-10">
           <div className="max-w-5xl mx-auto text-center mb-32">
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              className="inline-block px-8 py-3 bg-brand/10 text-brand rounded-full text-sm font-black tracking-[0.4em] uppercase mb-8"
+              className="text-brand font-black uppercase tracking-[0.5em] mb-6 text-sm"
             >
-              ยกระดับธุรกิจของคุณด้วย Web/App V4
+              V4 PREMIUM PACKAGES (AUD)
             </motion.div>
-            <h2 className="text-5xl md:text-8xl font-black italic tracking-tighter leading-[0.9] mb-8">
-              "ความสุขคูณสอง... <br /> <span className="text-brand">อิ่มท้องพร้อมนวดผ่อนคลาย</span>"
+            <h2 className="text-5xl md:text-[9rem] font-black italic tracking-tighter leading-[0.8] mb-12">
+              Invest in <br /> <span className="text-brand">Growth.</span>
             </h2>
-            <p className="text-2xl text-slate-500 font-bold mb-12 italic">จบในระบบเดียวโดยพี่แสน 🍊⚡️</p>
             
-            <div className="inline-flex flex-col md:flex-row items-center gap-6 bg-white p-6 rounded-[32px] shadow-2xl shadow-brand/10 border border-brand/10">
-              <div className="bg-[#A3E635] text-slate-950 px-10 py-5 rounded-2xl animate-pulse">
-                <span className="text-4xl font-black italic tracking-tighter uppercase">50% OFF</span>
+            <div className="inline-flex flex-col md:flex-row items-center gap-10 bg-white p-10 rounded-[48px] shadow-2xl border-4 border-brand/20">
+              <div className="flex flex-col items-center">
+                <div className="bg-[#A3E635] text-slate-950 px-8 py-3 rounded-2xl rotate-[-2deg] mb-2 font-black text-2xl italic tracking-tighter">
+                  VIP CARE HOOK
+                </div>
+                <Users className="w-10 h-10 text-brand" />
               </div>
               <div className="text-left">
-                <p className="text-2xl font-black text-slate-950 leading-tight italic">
-                  สัมผัสประสบการณ์การทำระบบที่เหนือกว่า ด้วย 4 ขั้นตอนสไตล์พี่แสน!
+                <p className="text-2xl md:text-3xl font-black text-slate-950 leading-tight italic">
+                  "Stay with us, and your website stays online for FREE!"
+                </p>
+                <p className="text-lg text-slate-500 font-bold mt-2">
+                  ฟรี Domain & Hosting ปีแรก! และฟรีต่อเนื่องในปีถัดไปตราบเท่าที่มีการใช้งานระบบรายเดือน ⚡️
                 </p>
               </div>
             </div>
@@ -459,85 +477,89 @@ const LandingPage = () => {
             {[
               { 
                 name: "Starter Package", 
-                price: "149.50", 
-                oldPrice: "299", 
+                setup: "299",
+                price: "30", 
                 tag: "ทางเลือกเริ่มต้นสำหรับร้านสไตล์มินิมอล",
                 features: [
-                  "Smart PWA Web App (Basic) + Digital Menu (QR Code)", 
-                  "Professional Photo 10 รายการ (อาหาร/นวด)", 
-                  "ดูแลแบรนด์: คุยความต้องการเบื้องต้น + Essential SEO"
+                  "Setup Fee: $299 (จ่ายครั้งเดียวจบ)",
+                  "ฟรี Domain & Hosting (ตลอดอายุสมาชิก)",
+                  "ถ่ายภาพ 60 นาที (15 รูป)",
+                  "English Menu Online",
+                  "Add-on: ระบบจอง/POS/Ordering"
                 ],
-                cta: "💬 ทักแชท Facebook เพื่อประเมินโปรเจกต์"
+                cta: "💬 ทักแชทคุยคอนเซปต์กับน้องส้ม"
               },
               { 
                 name: "Professional Package", 
-                price: "224.50", 
-                oldPrice: "449", 
+                setup: "499",
+                price: "49", 
                 recommended: true,
-                tag: "ระบบครบวงจร สำหรับร้านที่ต้องการเติบโตแบบก้าวกระโดด",
+                tag: "Visuals + Sales Engine สำหรับการเติบโตแบบก้าวกระโดด",
                 features: [
-                  "Online Ordering & Booking PWA (จองนวด+สั่งอาหารครบ)", 
-                  "Cinematic Photo 20 รายการ + AI Promo Videos", 
-                  "ดูแลแบรนด์: ดีไซน์เปรี้ยวจี๊ดที่ป้าๆ ชอบ + Custom QR Table"
+                  "Setup Fee: $499 (จ่ายครั้งเดียวจบ)",
+                  "ฟรี Domain & Hosting (ตลอดอายุสมาชิก)",
+                  "ถ่ายภาพ 90 นาที (25 รูป + 1 Reel)",
+                  "Advanced Menu (English Focus)",
+                  "Add-on: ระบบจอง/POS/Ordering"
                 ],
-                cta: "💬 ทักแชท Facebook จองคิวทำระบบกับพี่แสน"
+                cta: "💬 ทักแชทจองคิวพี่แสน (ยอดนิยม!)"
               },
               { 
                 name: "Growth VIP Package", 
-                price: "299.50", 
-                oldPrice: "599", 
-                tag: "ครอบครองตลาดแบบพรีเมียม พร้อมผู้ช่วย AI เต็มรูปแบบ",
+                setup: "699",
+                price: "99", 
+                tag: "Full English Marketing & AI อัปเดตตลาดทุกสัปดาห์",
                 features: [
-                  "Full White-Label Branding + AI Concierge (น้องส้ม 🍊)", 
-                  "Unlimited AI Cinematic Content", 
-                  "Cross-Store Ad Network + ผู้ดูแลส่วนตัว 24/7"
+                  "Setup Fee: $699 (จ่ายครั้งเดียวจบ)",
+                  "ฟรี Domain & Hosting (ตลอดอายุสมาชิก)",
+                  "ถ่ายภาพ 120 นาที (3 Reels + รูปไม่จำกัด)",
+                  "Full Marketing Content (English)",
+                  "Add-on: ระบบจอง/POS/Ordering"
                 ],
-                cta: "💬 ทักแชท Facebook รับสิทธิ์ VIP พิเศษ"
+                cta: "💬 ทักแชทรับสิทธิ์ VIP กับพี่แสน"
               }
             ].map((plan, idx) => (
               <motion.div 
                 key={idx}
-                initial={{ y: 100, opacity: 0 }}
+                initial={{ y: 50, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1, duration: 0.8 }}
-                className={`flex flex-col relative p-12 md:p-16 rounded-[64px] border-4 transition-all duration-700 min-h-[850px] ${
+                className={`flex flex-col relative p-12 md:p-16 rounded-[64px] border-4 transition-all duration-700 min-h-[950px] ${
                   plan.recommended 
-                  ? 'bg-white border-brand shadow-[0_60px_120px_-20px_rgba(184,150,46,0.2)] z-20 scale-105 text-slate-950' 
-                  : 'bg-white border-slate-100 hover:border-brand/30 text-slate-950'
+                  ? 'bg-white border-brand shadow-[0_60px_120px_-20px_rgba(184,150,46,0.2)] z-20 scale-105' 
+                  : 'bg-white border-slate-100 hover:border-brand/30'
                 }`}
               >
                 {plan.recommended && (
-                  <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-brand text-white px-10 py-3 rounded-full text-xs font-black uppercase tracking-widest shadow-xl">
-                    MOST POPULAR - น้องส้มเชียร์สุดใจ! 🍊⚡️
+                  <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-brand text-white px-10 py-3 rounded-full text-xs font-black uppercase tracking-widest shadow-xl whitespace-nowrap">
+                    Best Value for Sydney Businesses 🇦🇺⚡️
                   </div>
                 )}
                 
-                <div className="flex-grow">
-                  <h3 className={`text-sm font-black uppercase tracking-[0.4em] mb-6 ${plan.recommended ? 'text-brand' : 'text-slate-400'}`}>
-                    {plan.name}
-                  </h3>
-                  <p className="text-2xl font-black italic mb-12 leading-tight text-slate-900">
-                    {plan.tag}
-                  </p>
-                  
-                  <div className="mb-14 p-8 bg-slate-50 rounded-[32px] border border-slate-100 relative overflow-hidden group">
-                    <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:rotate-12 transition-transform">
-                      <Zap className="w-20 h-20 text-brand" />
+                <div className="mb-12 text-slate-950">
+                  <div className="mb-8">
+                    <h3 className="text-4xl font-black italic tracking-tighter mb-4">{plan.name}</h3>
+                    <div className="flex items-center gap-3 mb-6">
+                      <div className="px-4 py-1 bg-slate-900 text-white rounded-lg text-[10px] font-black uppercase tracking-widest">
+                        Setup Fee: ${plan.setup}
+                      </div>
                     </div>
-                    <div className="flex items-baseline gap-4 mb-2">
-                      <span className="text-6xl md:text-7xl font-black tracking-tighter text-slate-950">${plan.price}</span>
-                      <span className="text-2xl line-through text-slate-300 font-bold tracking-tighter">${plan.oldPrice}</span>
-                      <span className="text-xl font-bold text-slate-400">/ เดือน</span>
+                    <div className="flex items-baseline gap-4 mb-2 text-slate-950">
+                      <span className="text-7xl font-black tracking-tighter">${plan.price}</span>
+                      <span className="text-xl font-bold text-slate-400">/ Month (AUD)</span>
                     </div>
-                    <p className="text-sm font-black uppercase tracking-widest text-[#A3E635] bg-slate-950 inline-block px-4 py-1 rounded-lg">50% DISCOUNTED</p>
                   </div>
+                  <p className="text-xl font-bold text-slate-600 leading-relaxed italic border-l-4 border-brand pl-6">{plan.tag}</p>
+                </div>
 
-                  <ul className="mb-16 space-y-8">
+                <div className="flex-1 mb-12 text-slate-950">
+                  <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-8">What's Included:</p>
+                  <ul className="space-y-6">
                     {plan.features.map((f, i) => (
-                      <li key={i} className="flex items-start gap-5 text-xl font-bold">
-                        <CheckCircle2 className={`w-8 h-8 flex-shrink-0 text-brand`} />
-                        <span className="opacity-80">{f}</span>
+                      <li key={i} className="flex items-start gap-4 text-xl font-bold">
+                        <CheckCircle2 className={`w-6 h-6 flex-shrink-0 text-brand mt-1`} />
+                        <span className="opacity-90">{f}</span>
                       </li>
                     ))}
                   </ul>
@@ -552,13 +574,83 @@ const LandingPage = () => {
                     plan.recommended 
                     ? 'bg-brand text-white hover:scale-105' 
                     : 'bg-slate-950 text-white hover:bg-brand'
-                  }`}>
+                    }`}
+                  >
                     <MessageCircle className="w-6 h-6" />
                     <span>{plan.cta}</span>
                   </a>
                 </div>
               </motion.div>
             ))}
+          </div>
+
+          {/* --- VISUAL & COPY SHOWCASE (SYDNEY SAMPLES) --- */}
+          <div className="max-w-6xl mx-auto mb-32">
+            <div className="text-center mb-16">
+              <h3 className="text-3xl md:text-5xl font-black italic tracking-tighter mb-4">คุณภาพที่คุณจะได้รับ</h3>
+              <p className="text-xl text-slate-500 font-bold italic">ตัวอย่างงานภาพและ English Copywriting สไตล์ V4 🍊⚡️</p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-12">
+              {/* Product Sample 1 */}
+              <motion.div 
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-[48px] overflow-hidden shadow-xl border border-slate-100 group"
+              >
+                <div className="aspect-video bg-slate-200 relative overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&q=80&w=800" 
+                    alt="Pad Thai King Prawn"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute top-6 left-6 bg-brand text-white px-6 py-2 rounded-full text-xs font-black uppercase tracking-widest shadow-lg">
+                    Restaurant Sample
+                  </div>
+                </div>
+                <div className="p-10">
+                  <h4 className="text-2xl font-black mb-4 flex items-center gap-3">
+                    Pad Thai King Prawn (Signature)
+                    <span className="text-brand">🍊</span>
+                  </h4>
+                  <div className="p-6 bg-slate-50 rounded-2xl border-l-4 border-brand italic font-medium text-slate-600 leading-relaxed">
+                    "A Sydney icon with a Bangkok soul. Signature wok-tossed rice noodles featuring succulent King Prawns, crushed peanuts, and our secret 12-hour tamarind glaze. Experience the perfect balance of sweet, sour, and savory." 🥢🔥
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Product Sample 2 */}
+              <motion.div 
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-[48px] overflow-hidden shadow-xl border border-slate-100 group"
+              >
+                <div className="aspect-video bg-slate-200 relative overflow-hidden">
+                  <video 
+                    src="https://firebasestorage.googleapis.com/v0/b/chapter99-solution.firebasestorage.app/o/VDO%2F%E0%B8%A7%E0%B8%B4%E0%B8%94%E0%B8%B5%E0%B9%82%E0%B8%AD%E0%B8%99%E0%B8%A7%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%A1%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B9%82%E0%B8%A3%E0%B8%A1%E0%B9%88%E0%B8%B2.mp4?alt=media&token=39b1c008-c9a1-4416-8bdb-1d31b2ee53bf"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                  />
+                  <div className="absolute top-6 left-6 bg-brand text-white px-6 py-2 rounded-full text-xs font-black uppercase tracking-widest shadow-lg">
+                    Massage Sample
+                  </div>
+                </div>
+                <div className="p-10">
+                  <h4 className="text-2xl font-black mb-4 flex items-center gap-3">
+                    Deep Tissue (Office Syndrome Remedy)
+                    <span className="text-brand">🧘‍♂️</span>
+                  </h4>
+                  <div className="p-6 bg-slate-50 rounded-2xl border-l-4 border-brand italic font-medium text-slate-600 leading-relaxed text-lg">
+                    "Escape the Sydney hustle. Our specialized Deep Tissue therapy targets stubborn knots and chronic tension, specifically designed to relieve Office Syndrome. Restore your body’s alignment and feel the weight lift off your shoulders." 💆‍♂️✨
+                  </div>
+                </div>
+              </motion.div>
+            </div>
           </div>
 
           {/* Exclusive Contact Info */}
@@ -574,7 +666,7 @@ const LandingPage = () => {
           </motion.div>
 
           {/* --- PROJECT BRIEF FORM (FROM SCREENSHOT) --- */}
-          <div className="max-w-4xl mx-auto">
+          <div id="contact" className="max-w-4xl mx-auto">
             <motion.div 
                initial={{ opacity: 0, scale: 0.95 }}
                whileInView={{ opacity: 1, scale: 1 }}
@@ -588,18 +680,46 @@ const LandingPage = () => {
                   </div>
                   <div>
                     <h3 className="text-3xl font-black italic tracking-tight">ส่ง Project Brief ให้พี่แสน</h3>
-                    <p className="text-slate-500 font-bold italic">เพื่อประเมินโอกาสทองของธุรกิจคุณ ⚡️</p>
+                    <p className="text-slate-500 font-bold italic">ข้อมูลจะถูกส่งถึงพี่แสนที่ <span className="text-orange-600">chapter99info@gmail.com</span> ทันที ⚡️</p>
                   </div>
                 </div>
 
                 <div className="grid gap-12">
+                  <div className="grid md:grid-cols-2 gap-8">
+                    <div className="space-y-4">
+                      <label className="text-sm font-black text-slate-800 uppercase tracking-widest pl-4">ชื่อพี่ / ชื่อร้าน (Name / Shop)</label>
+                      <input 
+                        type="text" 
+                        placeholder="ระบุชื่อพี่หรือชื่อร้านค่ะ"
+                        className="w-full px-8 py-6 bg-slate-50 border-2 border-transparent focus:border-orange-500 focus:bg-white rounded-[24px] text-lg font-bold transition-all outline-none"
+                      />
+                    </div>
+                    <div className="space-y-4">
+                      <label className="text-sm font-black text-slate-800 uppercase tracking-widest pl-4">เบอร์โทรติดต่อ (AU Phone)</label>
+                      <input 
+                        type="tel" 
+                        placeholder="04xx xxx xxx"
+                        className="w-full px-8 py-6 bg-slate-50 border-2 border-transparent focus:border-orange-500 focus:bg-white rounded-[24px] text-lg font-bold transition-all outline-none"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="space-y-4">
+                    <label className="text-sm font-black text-slate-800 uppercase tracking-widest pl-4">อีเมล (Email)</label>
+                    <input 
+                      type="email" 
+                      placeholder="your@email.com"
+                      className="w-full px-8 py-6 bg-slate-50 border-2 border-transparent focus:border-orange-500 focus:bg-white rounded-[24px] text-lg font-bold transition-all outline-none"
+                    />
+                  </div>
+
                   <div className="space-y-6">
                     <div className="flex items-center gap-4 text-slate-800 font-black italic text-xl">
                       <MessageCircle className="w-6 h-6 text-orange-500" />
-                      <span>ปัญหาที่อยากให้เราช่วยแก้ (Challenge)</span>
+                      <span>สิ่งที่พี่อยากปรึกษาน้องส้มเป็นพิเศษ (Inquiry)</span>
                     </div>
                     <textarea 
-                      placeholder="เช่น อยากได้รูปสวยขึ้น, อยากมีระบบจองอัตโนมัติ, อยากทำ PWA..."
+                      placeholder="เช่น อยากเปลี่ยนเมนูภาษาอังกฤษใหม่, อยากถ่ายวีดีโอ Reels สวยๆ แบบฝรั่งชอบ, อยากทำ App จองนวด..."
                       className="w-full px-8 py-8 bg-slate-50 border-2 border-transparent focus:border-orange-500 focus:bg-white rounded-[32px] text-lg font-bold transition-all outline-none min-h-[150px] resize-none"
                     />
                   </div>
@@ -607,14 +727,14 @@ const LandingPage = () => {
                   <div className="space-y-6">
                     <div className="flex items-center gap-4 text-slate-800 font-black italic text-xl">
                       <Zap className="w-6 h-6 text-orange-500" />
-                      <span>งบประมาณที่เตรียมไว้ (Estimated Budget)</span>
+                      <span>แพ็กเกจที่พี่สนใจ (Package Interest)</span>
                     </div>
                     <div className="grid md:grid-cols-2 gap-4">
                       {[
-                        { label: 'เริ่มต้นเบาๆ ($299 - $999)', desc: 'เน้นสร้างตัวและระบบพื้นฐาน' },
-                        { label: 'เติบโตเต็มที่ ($1,000 - $2,999)', desc: 'เน้นขยายตลาดและ Content AI' },
-                        { label: 'พรีเมียม VIP ($3,000+)', desc: 'ดูแลแบรนด์ครบวงจร 24/7' },
-                        { label: 'ขอคุยคอนเซปต์ก่อน', desc: 'ยังไม่มีงบแน่นอน อยากปรึกษาพี่แสน' }
+                        { label: 'Starter Package ($299)', desc: 'เน้นเริ่มระบบและ Content พื้นฐาน' },
+                        { label: 'Professional Package ($499)', desc: 'เน้นขยายตลาดและ Reels ประจำเดือน' },
+                        { label: 'Growth VIP Package ($699)', desc: 'ดูแลแบรนด์ครบวงจร Marketing เต็มรูปแบบ' },
+                        { label: 'คุยคอนเซปต์ก่อนค่ะ', desc: 'ยังไม่แน่ใจ อยากให้น้องส้มช่วยแนะนำ' }
                       ].map((opt, i) => (
                         <label key={i} className="flex flex-col p-6 bg-slate-50 border-2 border-transparent hover:border-orange-500/30 rounded-[32px] cursor-pointer transition-all group">
                           <input type="radio" name="budget" className="hidden" />
@@ -626,15 +746,20 @@ const LandingPage = () => {
                   </div>
 
                   <button 
-                    onClick={() => alert('ข้อมูลถูกส่งให้พี่แสนแล้วค่ะ! น้องส้มจะรีบจัดการให้นะคะ 🍊⚡️')}
+                    onClick={() => alert('ข้อมูลของพี่ถูกส่งถึงพี่แสนที่ chapter99info@gmail.com แล้วค่ะ! รอน้องส้มหรือพี่แสนติดต่อกลับทาง Phone / Email / Inbox นะคะ 🍊🧡')}
                     className="w-full py-10 bg-brand/90 hover:bg-brand text-slate-950 text-2xl font-black rounded-[40px] shadow-2xl flex items-center justify-center gap-6 group transition-all"
                   >
                     <ArrowRight className="w-8 h-8 group-hover:translate-x-4 transition-transform" />
-                    <span>จองสิทธิ์ส่วนลด 50% และคุยคอนเซปต์กับเรา</span>
+                    <span>กดส่งข้อมูลรับส่วนลด 50% ทันที!</span>
                   </button>
                   
+                  <div className="p-8 bg-orange-50 rounded-[32px] border border-orange-100 italic">
+                    <p className="text-sm font-bold text-orange-800 mb-2">💡 VIP Care Policy:</p>
+                    <p className="text-xs text-orange-600 font-bold">"จ่ายรายเดือนเท่าเดิม เราดูแลค่า Domain และ Hosting ให้พี่ฟรีตลอดอายุสมาชิก ไม่ต้องปวดหัวเรื่องบิลรายปีค่ะ!"</p>
+                  </div>
+
                   <p className="text-center text-slate-400 text-xs font-bold italic">
-                    ข้อมูลของคุณจะถูกเก็บเป็นความลับสูงสุดตามมาตรฐาน Australian Privacy Acts 🇦🇺
+                    ข้อมูลของพี่จะถูกเก็บระนาบเดียวกับความลับสวรรค์ และปลอดภัยตามมาตรฐาน Privacy Acts 🇦🇺
                   </p>
                 </div>
               </div>
@@ -715,6 +840,7 @@ const LandingPage = () => {
               <div className="space-y-6">
                 <p className="text-xs font-black uppercase tracking-[0.4em] text-white/60">Contact</p>
                 <ul className="space-y-4 text-xl font-bold text-white">
+                  <li><a href="https://www.facebook.com/profile.php?id=61586534972406" target="_blank" rel="noreferrer" className="hover:text-brand transition-colors">Facebook: Chapter99</a></li>
                   <li>พี่แสน Saen: 0452044382</li>
                   <li>Sydney, Australia</li>
                 </ul>

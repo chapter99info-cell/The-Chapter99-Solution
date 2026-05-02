@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'motion/react';
+import { Sparkles } from 'lucide-react';
 
 const Navbar = () => {
   const location = useLocation();
@@ -14,33 +15,23 @@ const Navbar = () => {
         </Link>
         
         <div className="hidden md:flex items-center gap-12 text-xs font-black uppercase tracking-[0.3em] text-white/70">
-          {isHome ? (
-            <motion.a 
-              whileHover={{ color: '#E5C48B', x: 2 }}
-              href="#services" 
-              className="transition-colors cursor-pointer"
-            >
-              Services
-            </motion.a>
-          ) : (
-            <motion.div whileHover={{ color: '#E5C48B', x: 2 }}>
-              <Link to="/#services" className="transition-colors">Services</Link>
-            </motion.div>
-          )}
           <motion.div whileHover={{ color: '#E5C48B', x: 2 }}>
-            <Link to="/portfolio" className="transition-colors">Portfolio</Link>
+            <Link to="/pricing" className="transition-colors">Packages</Link>
           </motion.div>
           <motion.div whileHover={{ color: '#E5C48B', x: 2 }}>
-            <Link to="/pricing" className="transition-colors">Pricing</Link>
+            <Link to="/portfolio" className="transition-colors">Solutions</Link>
+          </motion.div>
+          <motion.div whileHover={{ color: '#E5C48B', x: 2 }}>
+            <Link to="/contact" className="transition-colors">Contact</Link>
           </motion.div>
         </div>
 
         <Link 
           to="/vip-qualification"
-          className="px-6 py-3 bg-champagne text-slate-950 text-[10px] font-black uppercase tracking-[0.2em] rounded-xl hover:scale-105 transition-all shadow-lg overflow-hidden relative group"
+          className="px-6 py-3 bg-[#8B2E2E] text-white text-[10px] font-black uppercase tracking-[0.2em] rounded-xl hover:scale-105 transition-all shadow-lg shadow-red-900/20 flex items-center gap-2 group"
         >
-          <span className="relative z-10">Apply VIP</span>
-          <div className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
+          <Sparkles className="w-3 h-3 text-brand animate-pulse" />
+          <span>Get 50% Off</span>
         </Link>
       </div>
     </nav>
