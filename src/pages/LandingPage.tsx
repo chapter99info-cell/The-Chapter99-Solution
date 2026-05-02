@@ -340,7 +340,7 @@ const LandingPage = () => {
               viewport={{ once: true }}
               className="sticky top-32"
             >
-              <div className="text-[12rem] font-black text-slate-50 leading-none mb-4 tracking-tighter italic">WHY US</div>
+              <div className="text-[12rem] font-black text-slate-300/60 leading-none mb-4 tracking-tighter italic">WHY US</div>
               <h2 className="text-6xl md:text-8xl font-black leading-[0.9] mb-10 tracking-tighter">
                 ทำไมต้อง <br/>
                 <span className="text-brand italic">Chapter99?</span>
