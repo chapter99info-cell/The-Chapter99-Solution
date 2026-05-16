@@ -89,7 +89,7 @@ export default function VIPQualificationPage() {
       'growth-vip': 'Growth VIP'
     };
     const displayName = planMap[initialPlan.toLowerCase()] || initialPlan;
-    return `คุณกำลังได้รับสิทธิ์ส่วนลด 50% สำหรับแพ็กเกจ ${displayName}`;
+    return `คุณกำลังได้รับสิทธิ์ส่วนลด 10% สำหรับแพ็กเกจ ${displayName}`;
   };
 
   const welcomeMessage = getWelcomeMessage();
@@ -171,7 +171,7 @@ export default function VIPQualificationPage() {
           <div className="flex items-center gap-3">
             <Timer className="w-6 h-6 animate-pulse" />
             <span className="text-xl md:text-3xl font-black italic tracking-tighter uppercase">
-              เหลือเพียง 4 สิทธิ์สุดท้ายสำหรับโปรโมชั่น 50%
+              เหลือเพียง 4 สิทธิ์สุดท้ายสำหรับโปรโมชั่น 10%
             </span>
           </div>
           <div className="flex items-center gap-2 bg-white/20 px-4 py-2 rounded-xl backdrop-blur-sm text-2xl font-black font-mono">
@@ -308,8 +308,8 @@ export default function VIPQualificationPage() {
                 onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
                 className="w-full px-8 py-6 text-2xl font-black bg-slate-50 border-2 border-transparent focus:border-champagne focus:bg-white rounded-3xl outline-none transition-all appearance-none cursor-pointer text-brand"
               >
-                <option value="basic">เริ่มต้นเบาๆ ($299 - $999) - เน้นสร้างตัวและระบบพื้นฐาน</option>
-                <option value="standard">คุ้มค่าสูงสุด ($1,000 - $2,999) - แพ็กเกจยอดนิยม ครบเครื่องเรื่อง V4</option>
+                <option value="basic">เริ่มต้นเบาๆ ($199 - $799) - เน้นสร้างตัวและระบบพื้นฐาน</option>
+                <option value="standard">คุ้มค่าสูงสุด ($800 - $2,999) - แพ็กเกจยอดนิยม ครบเครื่องเรื่อง V4</option>
                 <option value="premium">จัดเต็มระดับพรีเมียม ($3,000 - $5,000+) - สวยจบครบวงจรเพื่อแบรนด์ระดับโลก</option>
               </select>
             </div>
@@ -323,7 +323,7 @@ export default function VIPQualificationPage() {
               className={`w-full py-10 bg-champagne text-slate-950 text-3xl font-black rounded-3xl shadow-[0_25px_50px_-12px_rgba(229,196,139,0.5)] flex items-center justify-center gap-6 group transition-all ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''}`}
             >
               <Send className={`w-8 h-8 ${isSubmitting ? 'animate-bounce' : 'group-hover:translate-x-2 group-hover:-translate-y-2'} transition-transform`} />
-              <span>{isSubmitting ? 'กำลังส่งข้อมูล...' : 'จองสิทธิ์ส่วนลด 50% และคุยคอนเซปต์กับเรา'}</span>
+              <span>{isSubmitting ? 'กำลังส่งข้อมูล...' : 'จองสิทธิ์ส่วนลด 10% และคุยคอนเซปต์กับเรา'}</span>
             </motion.button>
 
             <p className="text-center text-slate-400 font-medium">

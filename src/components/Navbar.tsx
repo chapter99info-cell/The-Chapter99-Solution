@@ -31,7 +31,7 @@ const Navbar = () => {
           className="px-6 py-3 bg-[#8B2E2E] text-white text-[10px] font-black uppercase tracking-[0.2em] rounded-xl hover:scale-105 transition-all shadow-lg shadow-red-900/20 flex items-center gap-2 group"
         >
           <Sparkles className="w-3 h-3 text-brand animate-pulse" />
-          <span>Get 50% Off</span>
+          <span>Get 10% Off</span>
         </Link>
       </div>
     </nav>

@@ -28,7 +28,7 @@ export default function ContactPage() {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-5xl md:text-8xl font-black tracking-tighter mb-10 text-brand">
-              GET IN <br/> TOUCH & <br/> <span className="text-white">GET 50% OFF</span>
+              GET IN <br/> TOUCH & <br/> <span className="text-white">GET 10% OFF</span>
             </h1>
             <p className="text-xl md:text-2xl text-slate-400 font-medium leading-relaxed mb-16 max-w-lg">
               Ready to transform your business with our premium digital solutions? Our team is standing by to help you grow.

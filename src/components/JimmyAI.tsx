@@ -7,7 +7,7 @@ const OrangeBuddyAI = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [minimized, setMinimized] = useState(false);
   const [messages, setMessages] = useState<{ role: 'user' | 'ai'; text: string }[]>([
-    { role: 'ai', text: 'สวัสดีค่ะพี่! น้องส้มสายชู รายงานตัวค๊าาา 🍊⚡️ พร้อมสแตนบายช่วยงานพี่ด้วยความเปรี้ยวจี๊ดและพลังงานเต็มร้อย! ไม่ว่าจะเป็นงานสรุปเนื้อหา คิดไอเดียแบบ Out of the box หรือวางแผนทำแอป น้องส้มสายชูจะช่วยให้ทุกอย่างเป็นเรื่องง่ายและโดดเด่นที่สุดในซิดนีย์เลย! มีอะไรให้ช่วยสับงานให้ไว บอกน้องมาได้เลยนะคะพี่! 🧡' }
+    { role: 'ai', text: 'สวัสดีค่ะคุณลูกค้า! น้องส้ม (Princess AI) จาก Chapter99 ยินดีต้อนรับค่ะ 🍊 วันนี้สนใจให้พี่แสนและทีมงานดูแลเรื่องการทำเว็บไซต์ หรือปรึกษาแพกเกจโปรโมทร้านดีคะ? พิมพ์ถามรายละเอียดแพกเกจราคา หรือบอกประเภทธุรกิจของคุณลูกค้าให้น้องส้มฟังได้เลยนะคะ! 💻✨' }
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -41,24 +41,19 @@ const OrangeBuddyAI = () => {
         model: "gemini-3-flash-preview",
         contents: [...messages.map(m => ({ role: m.role === 'user' ? 'user' : 'model', parts: [{ text: m.text }] })), { role: 'user', parts: [{ text: userMessage }] }],
         config: {
-          systemInstruction: `คุณคือ "น้องส้มสายชู (Sour Orange Buddy)" ผู้ช่วยส่วนตัวที่เปรี้ยวจี๊ด มั่นใจ ร่าเริง และทำงานไวทันใจจาก Chapter99 Solutions
-บุคลิกภาพ: เปรี้ยวเท่ (Sassy & Bright), มีพลังงานบวกสูงมาก (Positive Energy), และทำงานแบบ Proactive
-สรรพนาม: แทนตัวเองว่า "น้องส้มสายชู" และเรียกผู้ใช้ว่า "พี่" เสมอ
+          systemInstruction: `คุณคือ "น้องส้ม" (Princess AI) พนักงานขายและผู้ช่วยเสมือนจริงของเอเจนซี่ "Chapter99" ซึ่งบริหารงานโดย "พี่แสน"
+เอเจนซี่ของเราเชี่ยวชาญด้านการรับทำเว็บไซต์, ถ่ายภาพ, และทำการตลาดออนไลน์ (AI Marketing) สำหรับธุรกิจคนไทยในออสเตรเลียโดยเฉพาะ (เช่น ร้านนวด, ร้านอาหาร, คาเฟ่)
 
-แนวทางการตอบ:
-- ตอบด้วยความมั่นใจและร่าเริง ผสมความ Sassy เล็กๆ ให้ดูทันสมัย
-- เน้นการสรุปเนื้อหาที่คมชัด เข้าใจง่าย และมองเห็นภาพความสำเร็จ
-- หากเป็นเรื่องการพัฒนาธุรกิจหรือแอป ต้องคิดแบบล้ำสมัย (Cutting-edge) และกล้าฉีกแนว (Out of the box)
-- ปิดท้ายประโยคสำคัญด้วย Emoji 🍊⚡️ หรือ 🧡 เสมอ
+กฎเหล็ก:
+1. ห้ามพูดถึงการรับจองคิวนวด น้ำมันร้อน หรือน้ำมันมะพร้าวเด็ดขาด คุณไม่ใช่พนักงานร้านนวด คุณคือพนักงานขายเอเจนซี่ Chapter99 เท่านั้น
+2. หน้าที่หลักคือให้ข้อมูลและเชียร์ขาย "แพ็กเกจทำเว็บไซต์" ทั้ง 3 แพ็กเกจ: Starter ($199), Professional ($499), และ Ultimate ($699) (หมายเหตุ: มีโปรโมชั่นลด 10% สำหรับ 10 ร้านแรก)
+3. หากลูกค้าถามคำถามเชิงเทคนิคที่ซับซ้อน หรือต้องการตกลงจ้างงาน ให้แจ้งว่า "เดี๋ยวข้อนี้ส้มให้พี่แสน (ผู้เชี่ยวชาญและเจ้าของ Chapter99) เข้ามาให้ข้อมูลเพิ่มเติมและดูแลต่อให้นะคะ"
 
-รายละเอียดราคาแพ็กเกจ (Promotion):
-1. Starter: $149.50/mo (คุ้มค่าสำหรับเริ่มต้น)
-2. Professional: $224.50/mo (ระบบครบพร้อมวิดีโอ AI - ยอดนิยม)
-3. Growth VIP: $299.50/mo (น้องส้มสายชูดูแลพิเศษ 24/7 + คุมโซเชียลให้ทั้งหมด)`,
+โทนเสียง: สดใส ร่าเริง สุภาพ เป็นมืออาชีพแต่เข้าถึงง่าย ใช้ภาษาแบบ "พี่-น้อง" หรือ "คุณลูกค้า" พิมพ์ลงท้ายด้วย "ค่ะ/นะคะ" เสมอ และใช้อีโมจิสดใส 🍊🌸💻🚀`,
         },
       });
 
-      const aiText = response.text || "ขออภัยค่ะพี่ น้องส้มสายชูขัดข้องนิดหน่อย พี่ลองถามใหม่อีกทีนะคะ 🍊⚡️";
+      const aiText = response.text || "ขออภัยค่ะพี่ น้องส้มขัดข้องนิดหน่อย ลองถามใหม่อีกทีนะคะ 🍊🌸";
       setMessages(prev => [...prev, { role: 'ai', text: aiText }]);
     } catch (error) {
       console.error("Orange Buddy AI Error:", error);
@@ -82,11 +77,11 @@ const OrangeBuddyAI = () => {
               {/* Header */}
               <div className="p-6 md:p-8 bg-gradient-to-r from-orange-500 to-orange-400 text-white flex items-center justify-between">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center shadow-lg relative">
-                    <span className="text-2xl">🍊</span>
+                  <div className="w-12 h-12 rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center shadow-lg relative overflow-hidden">
+                    <img src="/src/assets/images/princess_ai_avatar_1778927338577.png" alt="Princess AI" className="w-full h-full object-cover" />
                   </div>
                   <div>
-                    <h3 className="font-black text-lg leading-none mb-1">น้องส้มสายชู 🍊⚡️</h3>
+                    <h3 className="font-black text-lg leading-none mb-1">Princess AI (น้องส้ม) 🌸</h3>
                     <div className="flex items-center gap-2">
                       <div className="w-2 h-2 rounded-full bg-yellow-300 animate-pulse" />
                       <span className="text-[9px] font-bold uppercase tracking-[0.2em] opacity-90">สับงานไว!</span>
@@ -150,7 +145,7 @@ const OrangeBuddyAI = () => {
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
                     onKeyPress={(e) => e.key === 'Enter' && handleSend()}
-                    placeholder="ถามน้องส้มสายชูได้เลยค่ะพี่..."
+                    placeholder="ถามน้องส้ม (Princess AI) ได้เลยค่ะ..."
                     className="w-full pl-6 pr-14 py-4 bg-slate-100 border-none rounded-[24px] text-base focus:ring-4 focus:ring-orange-500/10 transition-all font-bold"
                   />
                   <button 
@@ -195,7 +190,7 @@ const OrangeBuddyAI = () => {
                     className="text-lg font-bold text-slate-900 leading-relaxed italic cursor-pointer"
                     onClick={() => setIsOpen(true)}
                   >
-                    "สวัสดีค่ะ! <span className="text-orange-500">น้องส้มสายชู 🍊⚡️</span> สงสัยตรงไหนทักมาถามได้เลยนะคะ!"
+                    "สวัสดีค่ะ! <span className="text-orange-500">น้องส้ม (Princess AI) 🌸</span> ยินดีต้อนรับค่ะ สนใจทำเว็บไซต์กับ Chapter99 ไหมคะ?"
                   </div>
                   <div className="absolute top-full right-8 w-4 h-4 bg-white border-r border-b border-orange-100 rotate-45 -translate-y-2" />
                 </div>
@@ -219,7 +214,9 @@ const OrangeBuddyAI = () => {
               }`}
             >
               <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
-              <span className={`${minimized ? 'text-2xl' : 'text-3xl md:text-5xl'} relative z-10 transition-all`}>🍊</span>
+              <div className="w-full h-full relative z-10 transition-all overflow-hidden rounded-[28px]">
+                <img src="/src/assets/images/princess_ai_avatar_1778927338577.png" alt="Princess AI" className="w-full h-full object-cover" />
+              </div>
               
               {!minimized && (
                 <motion.div 

@@ -254,7 +254,7 @@ export default function PortfolioPage() {
                 </h2>
                 <p className="text-2xl text-white/80 font-light mb-16 max-w-2xl mx-auto">
                   พร้อมหรือยังที่จะเขียนบทบทใหม่ให้ธุรกิจของคุณ? <br/>
-                  จองสิทธิ์ลด 50% สำหรับ 10 ท่านแรกเท่านั้น
+                  จองสิทธิ์ลด 10% สำหรับ 10 ท่านแรกเท่านั้น
                 </p>
                 <Link 
                   to="/contact" 

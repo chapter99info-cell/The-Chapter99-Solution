@@ -8,67 +8,61 @@ import { Link, useNavigate } from 'react-router-dom';
 
 const tiers = [
   {
-    name: "1. FOUNDER'S SPECIAL (LTD)",
-    setup: "$600",
-    originalSetup: "$1,200",
-    price: "$49",
-    description: "เหมาะสำหรับร้านที่ต้องการความเรียบง่ายแต่ดูแพงและพรีเมียม",
+    name: "🥉 STARTER (AI-Powered)",
+    setup: "$179",
+    originalSetup: "$199",
+    price: "$19",
+    description: "เริ่มต้นมีตัวตนออนไลน์ในราคาประหยัด คุ้มค่า ทำงานรวดเร็วผ่านระบบออนไลน์ 100%",
+    target: "เหมาะสำหรับ: ร้านเปิดใหม่, ธุรกิจขนาดย่อม, หรือร้านที่อยู่นอกเขตซิดนีย์",
     features: [
-      "FOUNDER'S Setup Fee: $600 (AUD)",
-      "Maintenance: $49/mo",
-      "Consultant Duty: System setup + Digital Identity",
-      "15-20 Professional Food Photos",
-      "Chapter99 Standard Digital Menu",
-      "QR Code Stand for Tables",
-      "Square POS Ready",
-      "Minimum 3 Months Contract"
+      "เว็บไซต์ 1 หน้า (Landing Page) ดีไซน์สวยงาม",
+      "พร้อมปุ่มโทรออกและแผนที่ Google Maps",
+      "รูปภาพและวิดีโอตกแต่งเว็บไซต์ด้วย AI โปร",
+      "ฟรี! ชื่อโดเมน .com.au หรือ .com ในปีแรก",
+      "ดูแลระบบเซิร์ฟเวอร์ Online 24 ชม.",
+      "ไม่ต้องถ่ายทำสถานที่จริง สะดวก รวดเร็ว"
     ],
-    cta: "SECURE SPOT",
-    to: "/vip-qualification",
+    cta: "GET STARTED",
+    to: "/vip-qualification?plan=starter",
     type: "som",
     popular: false
   },
   {
-    name: "2. THE CINEMATIC SIGNATURE",
-    setup: "$1,200",
-    originalSetup: "$2,499",
-    price: "$99",
-    description: "ยอดนิยม! มัดรวมความ 'ว้าว' ของวิดีโอ Reels เพื่อกระตุ้นยอดขาย",
+    name: "🥈 PROFESSIONAL (Premium)",
+    setup: "$449",
+    originalSetup: "$499",
+    price: "$39",
+    description: "ยกระดับภาพลักษณ์ร้านให้ดูพรีเมียม น่าเชื่อถือ ลูกค้าเสิร์ชเจอไว ตัดสินใจจองง่ายขึ้น!",
+    target: "เหมาะสำหรับ: ร้านนวดไทย, คาเฟ่, ร้านทำเล็บ ในเขตซิดนีย์",
     features: [
-      "FOUNDER'S Setup Fee: $1,200 (AUD)",
-      "Maintenance: $99/mo",
-      "Consultant Duty: AI Content Tools Installation",
-      "AI Tool Package: ปุ่ม AI ช่วย Gen แคปชัน หรือสรุปยอด",
-      "30-40 Professional Food Photos",
-      "3 Cinematic Reels (15-30 Sec)",
-      "ระบบ 'My Picks' Wishlist System",
-      "Video Menu Integration",
-      "Digital Asset Box (AI Assistant)",
-      "Minimum 3 Months Contract"
+      "เว็บไซต์ระบบเต็มรูปแบบ แบ่งหมวดหมู่ชัดเจน",
+      "ฟรี! ถ่ายภาพสถานที่จริงและพนักงาน (ซิดนีย์)",
+      "ถ่ายทำและตัดต่อ Cinematic Reels (1-2 คลิป)",
+      "ใบเสนอราคาและฟอร์มติดต่อจองที่ใช้งานง่าย",
+      "สมัครและตั้งค่า Facebook & Google GMB",
+      "สิทธิ์แก้เมนูหรือราคาบนเว็บฟรี 1 ครั้ง/เดือน"
     ],
-    cta: "SECURE SPOT",
-    to: "/service-summary?plan=Professional&price=$99",
+    cta: "GO PREMIUM",
+    to: "/vip-qualification?plan=professional",
     type: "summary",
     popular: true
   },
   {
-    name: "3. THE BRAND STORYTELLING",
-    setup: "$2,499",
-    originalSetup: "$4,999",
-    price: "$199",
-    description: "สำหรับร้านที่ต้องการทำ Branding เต็มรูปแบบระดับ Enterprise",
+    name: "🥇 ULTIMATE (Marketing Partner)",
+    setup: "$629",
+    originalSetup: "$699",
+    price: "$89",
+    description: "เหมือนมีทีม IT และนักการตลาดส่วนตัวดูแลร้านให้คุณแบบเบ็ดเสร็จทุกเดือน!",
+    target: "เหมาะสำหรับ: เจ้าของที่ไม่มีเวลา ต้องการผู้ช่วยดูแลการตลาดครบวงจร",
     features: [
-      "FOUNDER'S Setup Fee: $2,499 (AUD)",
-      "Maintenance: $199/mo",
-      "Consultant Duty: Monthly Photo/Video Refresh",
-      "Content Refresh: ถ่ายรูป/Reels ให้ 90 นาที ทุกเดือน",
-      "Unlimited Professional Food Photos",
-      "7 Cinematic Reels (Weekly Content)",
-      "1 Brand Story Video (1-2 Min)",
-      "Dedicated Account Manager",
-      "Minimum 3 Months Contract"
+      "ได้รับบริการทุกอย่างในแพ็กเกจ Professional",
+      "อีเมลธุรกิจประจำร้าน (info@yourshop.com.au)",
+      "ระบบโชว์รีวิว Google ช่วยกระตุ้นยอดขาย",
+      "AI Done-For-You: เขียนแคปชันโปรโมชั่นรายเดือน",
+      "คอนเทนต์ภาษาอังกฤษสละสลวย ดึงดูดลูกค้าฝรั่ง",
+      "ทีมงานส่งคอนเทนต์พร้อมโพสต์ 2-4 ชุด/เดือน"
     ],
-    cta: "SECURE SPOT",
+    cta: "CHOOSE ULTIMATE",
     href: "https://m.me/chapter99",
     type: "chat",
     popular: false
@@ -121,18 +115,18 @@ const industries = [
 ];
 
 const comparisons = [
-  { feature: "PWA Web App", starter: true, pro: "Advanced", vip: "Enterprise" },
-  { feature: "AI Promo Videos", starter: false, pro: "2 per month", vip: "Unlimited" },
-  { feature: "AI Concierge (น้องส้มสายชู)", starter: false, pro: false, vip: true },
-  { feature: "QR Code Ordering", starter: "View Only", pro: true, vip: true },
-  { feature: "Social Media Automation", starter: false, pro: "Basic", vip: "Full Managed" },
-  { feature: "Professional Photography", starter: "10 Items", pro: "20 Items", vip: "Continuous" },
+  { feature: "Web System", starter: "Landing Page", pro: "Multi-Page", vip: "Full Managed" },
+  { feature: "On-site Shoot", starter: "AI Only", pro: "Included", vip: "Monthly Refresh" },
+  { feature: "Cinematic Reels", starter: "AI Generated", pro: "1-2 Clips", vip: "2-4 Monthly" },
+  { feature: "Social Setup", starter: "Basic", pro: "Managed + GMB", vip: "Ad-Ready" },
+  { feature: "Content Writing", starter: "None", pro: "Standard", vip: "AI-Copywriter" },
+  { feature: "Domain & Hosting", starter: "Free (Year 1)", pro: "Free Always", vip: "Free Always" },
 ];
 
 const faqs = [
   { q: "ต้องมีสัญญานานแค่ไหน?", a: "ไม่มีสัญญาผูกมัดค่ะ พี่สามารถยกเลิกหรือเปลี่ยนแพ็กเกจได้ทุกเดือนตามความสะดวกของธุรกิจเลยค่ะ" },
-  { q: "ทำไมถึงถูกกว่าจ้างพนักงานทั่วไป?", a: "เพราะเราใช้ระบบ AI (น้องส้มสายชู) และ Automation เข้ามาช่วยทำงานซ้ำซ้อนแทนคน ทำให้พี่จ่ายน้อยลง 70% แต่ได้งานคุณภาพพรีเมียมค่ะ" },
-  { q: "ถ้าร้านมีเมนูใหม่ทำยังไง?", a: "ในแพ็กเกจ Pro และ VIP เรามีบริการอัปเดตข้อมูลให้ฟรีตลอดอายุการใช้งานค่ะ เพียงส่งรูปมาให้ น้องส้มสายชู จัดการให้เลย" },
+  { q: "ทำไมถึงถูกกว่าจ้างพนักงานทั่วไป?", a: "เพราะเราใช้ระบบ AI (น้องส้ม) และ Automation เข้ามาช่วยทำงานซ้ำซ้อนแทนคน ทำให้พี่จ่ายน้อยลง 70% แต่ได้งานคุณภาพพรีเมียมค่ะ" },
+  { q: "ถ้าร้านมีเมนูใหม่ทำยังไง?", a: "ในแพ็กเกจ Pro และ VIP เรามีบริการอัปเดตข้อมูลให้ฟรีตลอดอายุการใช้งานค่ะ เพียงส่งรูปมาให้ น้องส้ม (Princess AI) จัดการให้เลย" },
   { q: "รองรับการรับเงิน GST ไหม?", a: "รองรับแน่นอนค่ะ ระบบเราออก Tax Invoice แบบมาตรฐานออสเตรเลียได้ทันที สบายใจเรื่องบัญชีได้เลย" },
 ];
 
@@ -175,13 +169,13 @@ export default function PricingPage() {
             CHOOSE YOUR <br/> <span className="text-brand">ADVANTAGE</span>
           </h1>
           
-          <p className="text-2xl text-slate-500 font-black mb-12 uppercase tracking-widest bg-red-600 text-white inline-block px-8 py-2 rounded-xl">
-            🔥 FOUNDER'S SPECIAL: 10 SPOTS ONLY! 50% OFF SETUP
+          <p className="text-2xl text-slate-500 font-black mb-12 uppercase tracking-widest bg-brand text-white inline-block px-8 py-2 rounded-xl">
+            🚀 จบทุกปัญหาการตลาดออนไลน์ ให้คุณมีเวลาโฟกัสกับการดูแลหน้าร้าน
           </p>
           
           <p className="text-2xl text-slate-500 font-light max-w-2xl mx-auto leading-relaxed">
-            เลือกแพ็กเกจที่ใช่ เพื่อยกระดับธุรกิจของคุณ <br className="hidden md:block"/>
-            ก้าวไปสู่การเป็นแบรนด์ระดับไฮเอนด์ในซิดนีย์
+            เลือกแพ็กเกจที่ตอบโจทย์ธุรกิจคุณมากที่สุด <br className="hidden md:block"/>
+            เริ่มต้นมีตัวตนระดับพรีเมียมในซิดนีย์ได้ทันที
           </p>
         </div>
 
@@ -205,7 +199,10 @@ export default function PricingPage() {
 
                 <div className="mb-10 text-slate-950">
                   <h3 className="text-3xl font-black italic mb-2">{tier.name}</h3>
-                  <p className="text-slate-400 font-medium mb-4">{tier.description}</p>
+                  <p className="text-slate-400 font-medium mb-2">{tier.description}</p>
+                  <p className="text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-4 border-l-2 border-slate-200 pl-3 italic">
+                    {tier.target}
+                  </p>
                   <div className="flex items-center gap-4 mb-4">
                     <span className="text-xl font-bold text-slate-400 line-through">{tier.originalSetup}</span>
                     <div className="inline-block px-4 py-1 bg-red-600 text-white rounded-lg text-[10px] font-black uppercase tracking-widest">
@@ -224,7 +221,7 @@ export default function PricingPage() {
                   </div>
                   <div className="p-4 bg-slate-50 rounded-2xl border-l-4 border-brand italic mb-4">
                     <p className="text-sm font-bold text-slate-600">
-                      {tier.name.includes("FOUNDER") ? "System setup + Digital Identity" : tier.name.includes("CINEMATIC") ? "AI Content Tools Installation" : "Monthly Photo/Video Refresh"}
+                      {tier.name.includes("STARTER") ? "AI-Powered Online Setup" : tier.name.includes("PROFESSIONAL") ? "On-Site Shoot & Premium Design" : "Full-Managed Marketing Partner"}
                     </p>
                   </div>
                   <div className="flex items-center gap-2">
@@ -260,7 +257,7 @@ export default function PricingPage() {
 
               {tier.type === 'som' && (
                 <p className="mt-6 text-center text-sm font-black text-brand italic">
-                  * ทางเลือกที่ น้องส้มสายชู เชียร์ที่สุด!
+                  * ทางเลือกที่ น้องส้ม (Princess AI) เชียร์ที่สุด!
                 </p>
               )}
             </motion.div>
@@ -493,17 +490,17 @@ export default function PricingPage() {
             className="mt-20 p-12 bg-red-600 rounded-[64px] text-white text-center relative overflow-hidden"
           >
             <div className="relative z-10">
-              <h3 className="text-4xl md:text-6xl font-black italic mb-6">🔥 สมัครใช้งานระบบวันนี้... <br/> รับส่วนลดทันที $500!</h3>
+              <h3 className="text-4xl md:text-6xl font-black italic mb-6">🔥 สมัครใช้งานระบบวันนี้... <br/> รับส่วนลดทันที $250!</h3>
               <p className="text-xl md:text-2xl font-bold opacity-90 mb-10 max-w-2xl mx-auto italic">
                 เราไม่ได้แค่ถ่ายรูปให้คุณ แต่เราสร้างระบบที่ช่วยให้พนักงานของคุณทำงานง่ายขึ้นและลูกค้าประทับใจมากขึ้น
               </p>
               <div className="flex flex-col items-center gap-6">
                 <div className="flex items-center gap-6">
-                  <span className="text-4xl font-bold line-through opacity-50">$2,499</span>
-                  <span className="text-7xl font-black tracking-tighter">$1,999 AUD</span>
+                  <span className="text-4xl font-bold line-through opacity-50">$699</span>
+                  <span className="text-7xl font-black tracking-tighter">$629 AUD</span>
                 </div>
                 <div className="px-10 py-4 bg-white text-red-600 rounded-full font-black text-2xl uppercase tracking-widest shadow-2xl">
-                  YOU SAVE $500 INSTANTLY
+                  10% DISCOUNT APPLIED
                 </div>
               </div>
             </div>
@@ -621,7 +618,7 @@ export default function PricingPage() {
         <section className="mt-48 max-w-4xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-black italic tracking-tighter mb-4">Frequently Asked <span className="text-brand">Questions</span></h2>
-            <p className="text-xl text-slate-500">น้องส้มสายชู คัดคำถามที่พี่ๆ สงสัยมาตอบให้แล้วค่ะ 🍊⚡️</p>
+            <p className="text-xl text-slate-500">น้องส้ม (Princess AI) คัดคำถามที่พี่ๆ สงสัยมาตอบให้แล้วค่ะ 🍊🌸</p>
           </div>
 
           <div className="space-y-6">
@@ -698,12 +695,12 @@ export default function PricingPage() {
               </motion.div>
 
               <h2 className="text-5xl md:text-6xl font-black italic tracking-tighter mb-6 text-slate-950">
-                ยินดีด้วย! <br/> <span className="text-brand">คุณได้รับสิทธิ์ส่วนลด 50%</span>
+                ยินดีด้วย! <br/> <span className="text-brand">คุณกำลังก้าวสู่ระดับพรีเมียม</span>
               </h2>
 
               <p className="text-2xl md:text-3xl text-slate-500 font-medium mb-12 leading-relaxed">
                 คุณกำลังเลือกแพ็กเกจ <span className="text-slate-950 font-black">{selectedTier.name}</span> <br/>
-                กรุณากรอกข้อมูลเพื่อล็อกสิทธิ์ของคุณตอนนี้
+                กรุณากรอกข้อมูลเพื่อให้ทีมงานติดต่อกลับเพื่อวางแผนธุรกิจ
               </p>
 
               <motion.button

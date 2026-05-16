@@ -203,7 +203,7 @@ const LandingPage = () => {
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
-                  <span className="relative z-10">จองสิทธิ์ลด 50%</span>
+                  <span className="relative z-10">จองสิทธิ์ลด 10%</span>
                   <div className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
                 </motion.div>
               </Link>
@@ -254,7 +254,7 @@ const LandingPage = () => {
             </h2>
             <p className="text-2xl md:text-3xl text-slate-500 font-bold max-w-3xl mx-auto italic leading-relaxed">
               สเต็ปการทำงานที่ง่ายที่สุดสำหรับพี่ๆ เจ้าของร้าน ไม่ต้องปวดหัว <br /> 
-              ให้น้องส้มสายชูและทีม Chapter99 ดูแลให้ครบวงจรเลยค่ะ! 🍊⚡️
+              ให้น้องส้ม (Princess AI) และทีม Chapter99 ดูแลให้ครบวงจรเลยค่ะ! 🍊🌸
             </p>
           </div>
 
@@ -294,13 +294,13 @@ const LandingPage = () => {
             >
               <div className="inline-flex items-center gap-3 px-6 py-2 mb-10 text-[10px] font-black tracking-[0.3em] text-brand uppercase border border-brand/20 rounded-full bg-brand/5">
                 <Zap className="w-4 h-4 fill-current" />
-                <span>SOUR ORANGE BUDDY REVEALS</span>
+                <span>PRINCESS AI (NONG SOM) REVEALS</span>
               </div>
               <h2 className="text-6xl md:text-8xl font-black italic tracking-tighter mb-10 leading-[0.9]">
                 รูปสวย <br /> <span className="text-brand text-5xl md:text-7xl">รวยคูณสอง!</span>
               </h2>
               <p className="text-2xl text-slate-400 font-bold mb-12 italic leading-relaxed">
-                "พี่เชื่อมือเถอะค่ะ! แค่เปลี่ยนมุมกล้องและจัดแสงแบบ Chapter99 ร้านพี่ก็กลายเป็นร้านมิชลินได้ในพริบตา! ใครๆ เห็นรูปสวยๆ ก็อยากจะเข้ามาสัมผัสบรรยากาศจริงและสั่งอาหารทันทีเลยค่ะ!" 🍊⚡️
+                "พี่เชื่อมือเถอะค่ะ! แค่เปลี่ยนมุมกล้องและจัดแสงแบบ Chapter99 ร้านพี่ก็กลายเป็นร้านมิชลินได้ในพริบตา! ใครๆ เห็นรูปสวยๆ ก็อยากจะเข้ามาสัมผัสบรรยากาศจริงและสั่งอาหารทันทีเลยค่ะ!" 🍊🌸
               </p>
             </motion.div>
 
@@ -476,47 +476,47 @@ const LandingPage = () => {
           <div className="grid gap-12 lg:grid-cols-3 items-end mb-32">
             {[
               { 
-                name: "Starter Package", 
-                setup: "299",
-                price: "30", 
-                tag: "ทางเลือกเริ่มต้นสำหรับร้านสไตล์มินิมอล",
+                name: "🥉 STARTER (AI-Powered)", 
+                setup: "179",
+                price: "19", 
+                tag: "เริ่มต้นมีตัวตนออนไลน์ในราคาประหยัด คุ้มค่า ทำงานไว",
                 features: [
-                  "Setup Fee: $299 (จ่ายครั้งเดียวจบ)",
-                  "ฟรี Domain & Hosting (ตลอดอายุสมาชิก)",
-                  "ถ่ายภาพ 60 นาที (15 รูป)",
-                  "English Menu Online",
-                  "Add-on: ระบบจอง/POS/Ordering"
+                  "Setup Fee: $179 (จากปกติ $199)",
+                  "เว็บไซต์ 1 หน้า (Landing Page) หรูพรีเมียม",
+                  "ปุ่มโทรออกและแผนที่ Google Maps",
+                  "รูปภาพและวิดีโอตกแต่งโดย AI ระดับโปร",
+                  "ฟรี! ชื่อโดเมน & โฮสติ้งในปีแรก"
                 ],
-                cta: "💬 ทักแชทคุยคอนเซปต์กับน้องส้ม"
+                cta: "💬 ทักแชทจองสิทธิ์ลด 10%"
               },
               { 
-                name: "Professional Package", 
-                setup: "499",
-                price: "49", 
+                name: "🥈 PROFESSIONAL (Premium)", 
+                setup: "449",
+                price: "39", 
                 recommended: true,
-                tag: "Visuals + Sales Engine สำหรับการเติบโตแบบก้าวกระโดด",
+                tag: "ถ่ายภาพสถานที่จริง + วิดีโอ Reels ดึงดูดลูกค้าซิดนีย์",
                 features: [
-                  "Setup Fee: $499 (จ่ายครั้งเดียวจบ)",
-                  "ฟรี Domain & Hosting (ตลอดอายุสมาชิก)",
-                  "ถ่ายภาพ 90 นาที (25 รูป + 1 Reel)",
-                  "Advanced Menu (English Focus)",
-                  "Add-on: ระบบจอง/POS/Ordering"
+                  "Setup Fee: $449 (จากปกติ $499)",
+                  "ระบบเว็บเต็มรูปแบบ + ฟอร์มติดต่อจอง",
+                  "ช่างภาพเดินทางไปถ่ายทำถึงสถานที่จริง",
+                  "Cinematic Reels 1-2 คลิป สำหรับโปรโมท",
+                  "Setup Facebook & Google Business ให้จบ"
                 ],
-                cta: "💬 ทักแชทจองคิวพี่แสน (ยอดนิยม!)"
+                cta: "💬 ทักแชทจองช่างภาพด่วน!"
               },
               { 
-                name: "Growth VIP Package", 
-                setup: "699",
-                price: "99", 
-                tag: "Full English Marketing & AI อัปเดตตลาดทุกสัปดาห์",
+                name: "🥇 ULTIMATE (Marketing)", 
+                setup: "629",
+                price: "89", 
+                tag: "เสมือนมีทีม IT และการตลาดส่วนตัวดูแลให้คุณทุกเดือน",
                 features: [
-                  "Setup Fee: $699 (จ่ายครั้งเดียวจบ)",
-                  "ฟรี Domain & Hosting (ตลอดอายุสมาชิก)",
-                  "ถ่ายภาพ 120 นาที (3 Reels + รูปไม่จำกัด)",
-                  "Full Marketing Content (English)",
-                  "Add-on: ระบบจอง/POS/Ordering"
+                  "Setup Fee: $629 (จากปกติ $699)",
+                  "ได้รับบริการครบจากแพ็กเกจ Professional",
+                  "AI Done-For-You: เขียนแคปชันรายเดือน",
+                  "อีเมลธุรกิจ & ระบบโชว์รีวิว Google",
+                  "คอนเทนต์อังกฤษสละสลวย ดึงดูดลูกค้าฝรั่ง"
                 ],
-                cta: "💬 ทักแชทรับสิทธิ์ VIP กับพี่แสน"
+                cta: "💬 ทักแชทรับสิทธิ์ VIP (สุดคุ้ม)"
               }
             ].map((plan, idx) => (
               <motion.div 
@@ -729,13 +729,13 @@ const LandingPage = () => {
                       <Zap className="w-6 h-6 text-orange-500" />
                       <span>แพ็กเกจที่พี่สนใจ (Package Interest)</span>
                     </div>
-                    <div className="grid md:grid-cols-2 gap-4">
-                      {[
-                        { label: 'Starter Package ($299)', desc: 'เน้นเริ่มระบบและ Content พื้นฐาน' },
-                        { label: 'Professional Package ($499)', desc: 'เน้นขยายตลาดและ Reels ประจำเดือน' },
-                        { label: 'Growth VIP Package ($699)', desc: 'ดูแลแบรนด์ครบวงจร Marketing เต็มรูปแบบ' },
-                        { label: 'คุยคอนเซปต์ก่อนค่ะ', desc: 'ยังไม่แน่ใจ อยากให้น้องส้มช่วยแนะนำ' }
-                      ].map((opt, i) => (
+                      <div className="grid md:grid-cols-2 gap-4">
+                        {[
+                          { label: 'Starter Package ($199)', desc: 'เน้นเริ่มระบบและ Content พื้นฐาน' },
+                          { label: 'Professional Package ($499)', desc: 'เน้นขยายตลาดและ Reels ประจำเดือน' },
+                          { label: 'Ultimate Package ($699)', desc: 'ดูแลแบรนด์ครบวงจร Marketing เต็มรูปแบบ' },
+                          { label: 'คุยคอนเซปต์ก่อนค่ะ', desc: 'ยังไม่แน่ใจ อยากให้น้องส้มช่วยแนะนำ' }
+                        ].map((opt, i) => (
                         <label key={i} className="flex flex-col p-6 bg-slate-50 border-2 border-transparent hover:border-orange-500/30 rounded-[32px] cursor-pointer transition-all group">
                           <input type="radio" name="budget" className="hidden" />
                           <span className="text-lg font-black text-slate-900 mb-1 group-hover:text-orange-500">{opt.label}</span>
@@ -750,7 +750,7 @@ const LandingPage = () => {
                     className="w-full py-10 bg-brand/90 hover:bg-brand text-slate-950 text-2xl font-black rounded-[40px] shadow-2xl flex items-center justify-center gap-6 group transition-all"
                   >
                     <ArrowRight className="w-8 h-8 group-hover:translate-x-4 transition-transform" />
-                    <span>กดส่งข้อมูลรับส่วนลด 50% ทันที!</span>
+                    <span>กดส่งข้อมูลรับส่วนลด 10% ทันที!</span>
                   </button>
                   
                   <div className="p-8 bg-orange-50 rounded-[32px] border border-orange-100 italic">
@@ -801,7 +801,7 @@ const LandingPage = () => {
                   href="#pricing"
                   className="px-12 py-6 bg-white text-slate-950 text-xl font-black rounded-2xl shadow-xl flex items-center gap-4 mx-auto group hover:scale-105 transition-all w-fit"
                 >
-                  เลื่อนไปจองสิทธิ์ส่วนลด 50%
+                  เลื่อนไปจองสิทธิ์ส่วนลด 10%
                   <ChevronRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
                 </a>
               </div>
@@ -884,7 +884,7 @@ const LandingPage = () => {
               </div>
 
               <h2 className="text-5xl md:text-6xl font-black italic tracking-tighter mb-6 text-slate-950">
-                ยินดีด้วย! <br/> <span className="text-brand">คุณได้รับสิทธิ์ส่วนลด 50%</span>
+                ยินดีด้วย! <br/> <span className="text-brand">คุณได้รับสิทธิ์ส่วนลด 10%</span>
               </h2>
 
               <p className="text-2xl md:text-3xl text-slate-500 font-medium mb-12 leading-relaxed">
